@@ -5,8 +5,10 @@ def read_csv(filename):
         reader = unicodecsv.DictReader(f)
         return list(reader)
         
-enrollments = read_csv('enrollments.csv')
-daily_engagement = read_csv('daily_engagement.csv')
-project_submissions = read_csv('project_submissions.csv')
+enrollments = read_csv('data/enrollments.csv')
+daily_engagement = read_csv('data/daily_engagement.csv')
+project_submissions = read_csv('data/project_submissions.csv')
 
+print(enrollments[0])
 print(daily_engagement[0])
+print(project_submissions[0])
